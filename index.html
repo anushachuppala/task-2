@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        height: 100px;
+        background-color: rgb(7, 7, 7);
+        display: flex;
+        align-items: center;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      ul {
+        padding-left: 200px;
+        padding-top: 30px;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+      }
+
+      li {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        color: white;
+        padding-left: 60px;
+      }
+
+      main {
+        min-height: 100vh;
+        background-color: rgb(213, 213, 233);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Allows wrapping to next line if needed */
+        gap: 40px; /* Space between items */
+        padding: 40px;
+        text-align: center;
+      }
+
+      .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product img {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+      }
+
+      .product p {
+        font-size: 30px;
+        margin-top: 10px;
+      }
+
+      .search-box {
+        margin-left: 40px;
+        display: flex;
+        align-items: center;
+      }
+
+      .search-box input {
+        height: 35px;
+        border-radius: 20px;
+        border: none;
+        padding: 0 10px;
+      }
+
+      .search-box button {
+        background-color: rgb(0, 191, 255);
+        color: white;
+        margin-left: 10px;
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+      }
+      img:hover {
+        opacity: 0.7;
+        transform: scale(1.1);
+        transition: 0.1s;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.jpg" width="100px" height="100px" />
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Products</li>
+          <li>Contact</li>
+          <div class="search-box">
+            <input type="text" placeholder="Search..." />
+            <button>Search</button>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="product">
+        <img src="./assets/img1.jpg" alt="Jute Basket" />
+        <p><strong>Jute Basket</strong></p>
+      </div>
+
+      <div class="product">
+        <img src="./assets/img2.jpg" alt="Laundry Basket" />
+        <p><strong>Laundry Basket</strong></p>
+      </div>
+
+      <div class="product">
+        <img src="./assets/img3.jpg" alt="Lightening Solutions" />
+        <p><strong>Lightening Solutions</strong></p>
+      </div>
+
+      <div class="product">
+        <img src="./assets/img4.jpg" alt="Truck" />
+        <p><strong>Truck</strong></p>
+      </div>
+    </main>
+  </body>
+</html>
